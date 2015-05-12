@@ -12,18 +12,11 @@
 		93959A031AE6B60A00AEC815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93959A011AE6B60A00AEC815 /* Main.storyboard */; };
 		93959A051AE6B60A00AEC815 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93959A041AE6B60A00AEC815 /* Images.xcassets */; };
 		93959A081AE6B60A00AEC815 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93959A061AE6B60A00AEC815 /* LaunchScreen.xib */; };
-		93959A141AE6B60A00AEC815 /* BandRegisterNotificationSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93959A131AE6B60A00AEC815 /* BandRegisterNotificationSwiftTests.swift */; };
+		93959A201AE6BA0C00AEC815 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93959A1F1AE6BA0C00AEC815 /* CoreBluetooth.framework */; };
+		93959A221AE6BA1600AEC815 /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93959A211AE6BA1600AEC815 /* MicrosoftBandKit_iOS.framework */; };
+		93959A251AE6BB1700AEC815 /* C.png in Resources */ = {isa = PBXBuildFile; fileRef = 93959A231AE6BB1700AEC815 /* C.png */; };
+		93959A261AE6BB1700AEC815 /* Cc.png in Resources */ = {isa = PBXBuildFile; fileRef = 93959A241AE6BB1700AEC815 /* Cc.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		93959A0E1AE6B60A00AEC815 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 939599F01AE6B60A00AEC815 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 939599F71AE6B60A00AEC815;
-			remoteInfo = BandRegisterNotificationSwift;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		939599F81AE6B60A00AEC815 /* BandRegisterNotificationSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BandRegisterNotificationSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,9 +26,11 @@
 		93959A021AE6B60A00AEC815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93959A041AE6B60A00AEC815 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		93959A071AE6B60A00AEC815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		93959A0D1AE6B60A00AEC815 /* BandRegisterNotificationSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BandRegisterNotificationSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		93959A121AE6B60A00AEC815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93959A131AE6B60A00AEC815 /* BandRegisterNotificationSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandRegisterNotificationSwiftTests.swift; sourceTree = "<group>"; };
+		93959A1D1AE6B9F200AEC815 /* BandRegisterNotificationSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BandRegisterNotificationSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		93959A1F1AE6BA0C00AEC815 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		93959A211AE6BA1600AEC815 /* MicrosoftBandKit_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MicrosoftBandKit_iOS.framework; sourceTree = "<group>"; };
+		93959A231AE6BB1700AEC815 /* C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = C.png; sourceTree = "<group>"; };
+		93959A241AE6BB1700AEC815 /* Cc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cc.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,13 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93959A0A1AE6B60A00AEC815 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				93959A201AE6BA0C00AEC815 /* CoreBluetooth.framework in Frameworks */,
+				93959A221AE6BA1600AEC815 /* MicrosoftBandKit_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +49,8 @@
 		939599EF1AE6B60A00AEC815 = {
 			isa = PBXGroup;
 			children = (
+				93959A1E1AE6B9FE00AEC815 /* Frameworks */,
 				939599FA1AE6B60A00AEC815 /* BandRegisterNotificationSwift */,
-				93959A101AE6B60A00AEC815 /* BandRegisterNotificationSwiftTests */,
 				939599F91AE6B60A00AEC815 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				939599F81AE6B60A00AEC815 /* BandRegisterNotificationSwift.app */,
-				93959A0D1AE6B60A00AEC815 /* BandRegisterNotificationSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,10 +67,13 @@
 			isa = PBXGroup;
 			children = (
 				939599FD1AE6B60A00AEC815 /* AppDelegate.swift */,
+				93959A1D1AE6B9F200AEC815 /* BandRegisterNotificationSwift-Bridging-Header.h */,
 				939599FF1AE6B60A00AEC815 /* ViewController.swift */,
 				93959A011AE6B60A00AEC815 /* Main.storyboard */,
 				93959A041AE6B60A00AEC815 /* Images.xcassets */,
 				93959A061AE6B60A00AEC815 /* LaunchScreen.xib */,
+				93959A231AE6BB1700AEC815 /* C.png */,
+				93959A241AE6BB1700AEC815 /* Cc.png */,
 				939599FB1AE6B60A00AEC815 /* Supporting Files */,
 			);
 			path = BandRegisterNotificationSwift;
@@ -95,21 +87,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		93959A101AE6B60A00AEC815 /* BandRegisterNotificationSwiftTests */ = {
+		93959A1E1AE6B9FE00AEC815 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				93959A131AE6B60A00AEC815 /* BandRegisterNotificationSwiftTests.swift */,
-				93959A111AE6B60A00AEC815 /* Supporting Files */,
+				93959A211AE6BA1600AEC815 /* MicrosoftBandKit_iOS.framework */,
+				93959A1F1AE6BA0C00AEC815 /* CoreBluetooth.framework */,
 			);
-			path = BandRegisterNotificationSwiftTests;
-			sourceTree = "<group>";
-		};
-		93959A111AE6B60A00AEC815 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				93959A121AE6B60A00AEC815 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,24 +116,6 @@
 			productReference = 939599F81AE6B60A00AEC815 /* BandRegisterNotificationSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		93959A0C1AE6B60A00AEC815 /* BandRegisterNotificationSwiftTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 93959A1A1AE6B60A00AEC815 /* Build configuration list for PBXNativeTarget "BandRegisterNotificationSwiftTests" */;
-			buildPhases = (
-				93959A091AE6B60A00AEC815 /* Sources */,
-				93959A0A1AE6B60A00AEC815 /* Frameworks */,
-				93959A0B1AE6B60A00AEC815 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				93959A0F1AE6B60A00AEC815 /* PBXTargetDependency */,
-			);
-			name = BandRegisterNotificationSwiftTests;
-			productName = BandRegisterNotificationSwiftTests;
-			productReference = 93959A0D1AE6B60A00AEC815 /* BandRegisterNotificationSwiftTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +127,6 @@
 				TargetAttributes = {
 					939599F71AE6B60A00AEC815 = {
 						CreatedOnToolsVersion = 6.3;
-					};
-					93959A0C1AE6B60A00AEC815 = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = 939599F71AE6B60A00AEC815;
 					};
 				};
 			};
@@ -182,7 +144,6 @@
 			projectRoot = "";
 			targets = (
 				939599F71AE6B60A00AEC815 /* BandRegisterNotificationSwift */,
-				93959A0C1AE6B60A00AEC815 /* BandRegisterNotificationSwiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -192,16 +153,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93959A261AE6BB1700AEC815 /* Cc.png in Resources */,
 				93959A031AE6B60A00AEC815 /* Main.storyboard in Resources */,
 				93959A081AE6B60A00AEC815 /* LaunchScreen.xib in Resources */,
 				93959A051AE6B60A00AEC815 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93959A0B1AE6B60A00AEC815 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				93959A251AE6BB1700AEC815 /* C.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,23 +173,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93959A091AE6B60A00AEC815 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				93959A141AE6B60A00AEC815 /* BandRegisterNotificationSwiftTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		93959A0F1AE6B60A00AEC815 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 939599F71AE6B60A00AEC815 /* BandRegisterNotificationSwift */;
-			targetProxy = 93959A0E1AE6B60A00AEC815 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		93959A011AE6B60A00AEC815 /* Main.storyboard */ = {
@@ -291,7 +231,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -329,7 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -340,9 +280,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BandRegisterNotificationSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BandRegisterNotificationSwift/BandRegisterNotificationSwift-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -350,43 +295,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BandRegisterNotificationSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		93959A1B1AE6B60A00AEC815 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BandRegisterNotificationSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BandRegisterNotificationSwift.app/BandRegisterNotificationSwift";
-			};
-			name = Debug;
-		};
-		93959A1C1AE6B60A00AEC815 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BandRegisterNotificationSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BandRegisterNotificationSwift.app/BandRegisterNotificationSwift";
+				SWIFT_OBJC_BRIDGING_HEADER = "BandRegisterNotificationSwift/BandRegisterNotificationSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -407,14 +323,6 @@
 			buildConfigurations = (
 				93959A181AE6B60A00AEC815 /* Debug */,
 				93959A191AE6B60A00AEC815 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		93959A1A1AE6B60A00AEC815 /* Build configuration list for PBXNativeTarget "BandRegisterNotificationSwiftTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				93959A1B1AE6B60A00AEC815 /* Debug */,
-				93959A1C1AE6B60A00AEC815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
